@@ -88,13 +88,13 @@ function startWatcher(name: string, watcher: Watcher, context: BuildContext) {
 
     if (!watcher.paths) {
       Logger.error(`watcher config, entry ${name}: missing "paths"`);
-      resolve();
+      resolve(() => {});
       return;
     }
 
     if (!watcher.callback) {
       Logger.error(`watcher config, entry ${name}: missing "callback"`);
-      resolve();
+      resolve(() => {});
       return;
     }
 
@@ -137,7 +137,7 @@ function startWatcher(name: string, watcher: Watcher, context: BuildContext) {
     chokidarWatcher.on('ready', () => {
       clearTimeout(timeoutId);
       Logger.debug(`watcher ready: ${watcher.options.cwd}${watcher.paths}`);
-      resolve();
+      resolve(() => {});
     });
 
     chokidarWatcher.on('error', (err: any) => {

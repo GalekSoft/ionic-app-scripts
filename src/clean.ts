@@ -17,6 +17,6 @@ export function clean(context: BuildContext) {
     } catch (ex) {
       reject(logger.fail(new BuildError(`Failed to clean directory ${context.buildDir} - ${ex.message}`)));
     }
-    resolve();
+    resolve(() => {});
   });
 }

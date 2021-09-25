@@ -118,7 +118,7 @@ export function writeFileAsync(filePath: string, content: string) {
       if (err) {
         return reject(err);
       }
-      return resolve();
+      return resolve(() => {});
     });
   });
 }
@@ -215,7 +215,7 @@ export function mkDirpAsync(directoryPath: string) {
       if (err) {
         return reject(err);
       }
-      return resolve();
+      return resolve(() => {});
     });
   });
 }

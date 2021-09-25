@@ -163,7 +163,7 @@ export function buildUpdate(changedFiles: ChangedFile[], context: BuildContext) 
         Logger.newLine();
 
         // we did it!
-        resolve();
+        resolve(() => {});
       });
     }
 

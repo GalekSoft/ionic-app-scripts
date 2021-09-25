@@ -40,7 +40,7 @@ export function validateTsConfigSettings(tsConfigFileContents: TsConfig) {
         error.isFatal = true;
         return reject(error);
       }
-      resolve();
+      resolve(() => {});
     } catch (e) {
       const error = new BuildError('The "tsconfig.json" file contains malformed JSON.');
       error.isFatal = true;

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
     "lib": ["dom", "es2015"],
@@ -16,6 +17,8 @@
     "src/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "node_modules/**",
+    "src/**/*.spec.ts"
   ]
 }
