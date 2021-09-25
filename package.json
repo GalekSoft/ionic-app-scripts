@@ -1,7 +1,7 @@
 {
   "name": "@ionic/app-scripts",
-  "version": "3.2.4",
-  "description": "Scripts for Ionic Projects",
+  "version": "3.2.5",
+  "description": "Modificated scripts the Ionic v3, for support latest NodeJS version",
   "homepage": "https://ionicframework.com/",
   "author": "Ionic Team <hi@ionic.io> (https://ionic.io)",
   "license": "MIT",
@@ -42,7 +42,7 @@
     "fs-extra": "^4.0.2",
     "glob": "^7.1.2",
     "json-loader": "^0.5.7",
-    "node-sass": "^4.10.0",
+    "node-sass": "6.0.1",
     "os-name": "^2.0.1",
     "postcss": "^6.0.21",
     "proxy-middleware": "^0.15.0",
